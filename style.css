@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #130e0e;
+    scroll-behavior: smooth; /* Smooth scrolling behavior for all links */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #36a5ab;
+}
+
+/* Header Section */
+header {
+    background-color: #000000;
+    color: rgb(7, 2, 2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #61dafb;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #23d4e8;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #efe1de;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));    
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #a8819e;
+    color: rgb(251, 246, 246);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(43, 154, 154, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #44d8b6;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgb(68, 163, 180);
+}
+
+/* Separate Languages and Other Skills */
+.language-skills, .general-skills {
+    margin-top: 40px;
+}
+
+.language-skills h3, .general-skills h3 {
+    text-align: center;
+    color: #27cfc7;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #000000;
+}
+
+.portfolio ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.portfolio ul li {
+    margin-bottom: 15px;
+}
+
+.portfolio ul li a {
+    text-decoration: none;
+    color: #f6f5ff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.portfolio ul li a:hover {
+    color: #61dafb;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #000000;
+    color: white;
+    padding: 60px 0;
+}
+
+.contact-card {
+    background-color: #6b45b1;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-card a {
+    color: #0f0000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    display: inline-block;
+    background-color: #c2d498;
+    color: rgb(148, 9, 9);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: #d81e1e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Form */
+.feedback-form {
+    background-color: #75c86c;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.feedback-form label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.feedback-form button {
+    background-color: #aabed1;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #c943b5;
+    box-shadow: 0 8px 16px rgb(186, 68, 68);
+}
+
+/* Smooth Scrolling Transition */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style for feedback navigation link */
+nav ul li a[href="#feedback"] {
+    color: #eeefe9;
+    font-weight: 700;
+}
+
+nav ul li a[href="#feedback"]:hover {
+    color: #21a1f1;
+}
